@@ -266,10 +266,6 @@ The checker validates:
 
     Harness Redaction Logging
 
-Pytest Suite
-bash
-
-pytest tests/ -v
 
 Additional unit tests covering:
 
