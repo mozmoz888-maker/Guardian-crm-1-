@@ -206,49 +206,7 @@ Architecture
 Component Overview
 text
 
-┌─────────────────────────────────────────────────────────────┐
-│                     LLM Harness (harness/)                  │
-│                                                             │
-│  ┌─────────────┐  ┌─────────────┐  ┌──────────────┐         │
-│  │  Validation │  │  Retry with │  │  Timeout with│         │
-│  │   Pydantic  │  │  Exponential│  │  Fallback    │         │
-│  │             │  │  Backoff    │  │              │         │
-│  └─────────────┘  └─────────────┘  └──────────────┘         │
-│                                                             │
-│  ┌─────────────┐  ┌─────────────┐                           │
-│  │  PII        │  │  Structured │                           │
-│  │  Redaction  │  │  Logging    │                           │
-│  └─────────────┘  └─────────────┘                           │
-└─────────────────────────────────────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────┐
-│                      Agent Swarm (agents/)                  │
-│                                                             │
-│  ┌──────────────┐  ┌──────────────┐  ┌───────────────┐      │
-│  │   Medical    │  │ Regulatory   │  │   Family      │      │
-│  │   History    │  │ Compliance   │  │   Welcome     │      │
-│  │   Agent      │  │ Agent        │  │   Agent       │      │
-│  └──────────────┘  └──────────────┘  └───────────────┘      │
-│                                                             │
-│  ┌──────────────┐  ┌──────────────┐  ┌───────────────┐      │
-│  │   Incident   │  │  Staffing    │  │   Incident    │      │
-│  │   Classifier │  │  Agent       │  │   Validator   │      │
-│  └──────────────┘  └──────────────┘  └───────────────┘      │
-└─────────────────────────────────────────────────────────────┘
-                            │
-                            ▼
-┌─────────────────────────────────────────────────────────────┐
-│                    Orchestrator (orchestrator.py)           │
-│                                                             │
-│ Coordinates the full workflow:                              │
-│ Raw Intake → Validate → Run Agents → Aggregate Results     │
-│                                                             │
-│  If any sub-agent fails:                                    │
-│  - Records failure in `incomplete_steps`                    │
-│  - Continues with remaining agents                          │
-│  - Returns `complete` / `partial` / `failed`                │
-└─────────────────────────────────────────────────────────────┘
+
 
 Data Flow
 
