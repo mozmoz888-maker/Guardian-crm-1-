@@ -218,34 +218,6 @@ Staffing Check → Validates training, hours, doctor availability against state 
 
 Project Structure
 
-guardian-crm/
-├── main.py              # Demo + live dashboard entrypoint
-├── checker.py           # Full test suite (14 tests)
-├── config.py            # All configuration
-├── factory.py           # Patient data generator
-├── agents/              # AI agents
-│   ├── orchestrator.py
-│   ├── medical_history_agent.py
-│   ├── regulatory_compliance_agent.py
-│   ├── family_welcome_agent.py
-│   ├── staffing_agent.py
-│   └── incident_agents.py
-├── harness/             # Reusable LLM harness
-│   ├── llm_harness.py
-│   ├── llm_clients.py
-│   ├── retry.py
-│   ├── logging_utils.py
-│   └── exceptions.py
-├── models/              # Pydantic schemas
-│   ├── intake_schemas.py
-│   ├── incident_schemas.py
-│   └── staffing_schemas.py
-├── demo_data/           # Sample JSON files
-├── tests/               # Pytest unit tests
-├── logs/                # Structured logs + audit trail
-├── requirements.txt     # Dependencies
-├── README.md            # This file
-└── LICENSE              # MIT License
 
 Demo Walkthrough
 
