@@ -1,0 +1,14 @@
+{
+  "resident_name": "Eleanor Whitfield",
+  "dob": "1938-04-12",
+  "state": "CA",
+  "address": "123 Oak Street, Apt 4B, Los Angeles, CA 90001",
+  "clinical_notes": "78-year-old female, history of hypertension controlled with lisinopril 10mg daily, mild osteoarthritis in both knees treated with acetaminophen PRN. Also takes atorvastatin 20mg for high cholesterol. Ambulatory with rolling walker. No known drug allergies. Mild fall risk noted by referring physician. No cognitive impairment reported.",
+  "submitted_forms": ["admission_agreement", "care_plan"],
+  "staff_ratio": "1:4",
+  "family_name": "Robert Whitfield",
+  "family_phone": "555-201-9933",
+  "family_email": "robert.whitfield@example.com"
+  
+  
+}
